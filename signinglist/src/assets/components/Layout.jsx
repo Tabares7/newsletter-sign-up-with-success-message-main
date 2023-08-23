@@ -1,16 +1,13 @@
 import React from 'react'
 import SVGSwitch from './SVGSwitch'
+import Content from './Content'
 
 const Layout = () => {
 
   return (
-    <div className='flex flex-col items-center justify-center gap-5 mx-auto '>
-        <div className='min-w-full'>
+    <div className='flex flex-col  gap-3'>
         <SVGSwitch/>
-        </div>
-        <div>
-            hdhdh
-        </div>
+       <Content/>
     </div>
        
     
