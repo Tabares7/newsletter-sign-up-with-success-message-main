@@ -1,6 +1,7 @@
 import React from 'react'
 import { Title } from './Title'
 import Fact from './Fact'
+import Input from './Input'
 
 const Content = () => {
   return (
@@ -19,7 +20,7 @@ const Content = () => {
         <Fact content="Product discovery and building what matters"/>
         <Fact content="Measuring to ensure updates are a success"/>
         <Fact content="And much more!"/>
-        
+        <Input title="Email address" placeholder="email@company.com"/>
 
     </div>
   )
