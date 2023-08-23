@@ -1,7 +1,8 @@
 import React from 'react'
 import { Title } from './Title'
 import Fact from './Fact'
-import Input from './Input'
+import Form from './Form'
+import Button from './Button'
 
 const Content = () => {
   return (
@@ -20,7 +21,7 @@ const Content = () => {
         <Fact content="Product discovery and building what matters"/>
         <Fact content="Measuring to ensure updates are a success"/>
         <Fact content="And much more!"/>
-        <Input title="Email address" placeholder="email@company.com"/>
+        <Form title="Email address" placeholder="email@company.com" buttontext="Subscribe to monthly newsletter"/>
 
     </div>
   )
