@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import illustrator from '../images/illustration-sign-up-mobile.svg'
+import React from 'react'
 import SVGSwitch from './SVGSwitch'
-
 
 const Layout = () => {
 
-    
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col items-center justify-center gap-5 mx-auto '>
+        <div className='min-w-full'>
         <SVGSwitch/>
+        </div>
+        <div>
+            hdhdh
+        </div>
     </div>
        
     
