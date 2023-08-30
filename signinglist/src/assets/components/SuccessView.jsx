@@ -1,11 +1,17 @@
 import React from "react";
 import { Title } from "./Title";
 import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SuccessView = () => {
     const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const email = queryParams.get('email');
+  const navigate = useNavigate();
+
+  const handdleClick = ()=>{
+    navigate('/');
+  }
 
   return (
     <div className="flex flex-col gap-8 p-10 min-h-screen justify-end">
@@ -37,7 +43,7 @@ const SuccessView = () => {
         A confirmation email has been sent to <span className="font-bold">{decodeURIComponent(email)}</span>. Please open
         it and click the button inside to confirm your subscription.
       </p>
-      <button type='submit' className="rounded-lg bg-blue-950 p-4 text-gray-200 mt-64">
+      <button type='submit' onClick={handdleClick} className="rounded-lg bg-blue-950 p-4 text-gray-200 mt-64">
         Dismiss message
       </button>
     </div>
