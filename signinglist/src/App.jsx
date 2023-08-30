@@ -1,15 +1,18 @@
-import { useState } from 'react'
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Layout from './assets/components/Layout';
 import './App.css'
-import Layout from './assets/components/Layout'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className=''>
-      <Layout/>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout/>} />
+        <Route path="/success" element={<h1>Email Correcto</h1>} />
+        <Route path="/error" element={<h1>Error: Email Incorrecto</h1>} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
