@@ -6,7 +6,6 @@ const Input = ({ title, placeholder, buttontext }) => {
   const navigate = useNavigate();
 
   const validateEmail = (email) => {
-    // Utilizando una expresión regular simple para validar el email
     const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     return re.test(email);
   };
@@ -15,8 +14,8 @@ const Input = ({ title, placeholder, buttontext }) => {
     e.preventDefault();
 
     if (validateEmail(email)) {
-      // Redirige a la vista de éxito
-      navigate('/success');
+      // Redirige a la vista de éxito y pasa el email como un parámetro
+      navigate(`/success?email=${encodeURIComponent(email)}`);
     } else {
       // Redirige a la vista de error
       navigate('/error');
