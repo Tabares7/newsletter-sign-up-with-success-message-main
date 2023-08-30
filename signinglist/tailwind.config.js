@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        tomato: "hsl(4, 100%, 67%)"
+        tomato: "hsl(4, 100%, 67%)",
+        paleblack: "hsl(234, 29%, 20%)",
       }
     },
   },

@@ -32,7 +32,7 @@ const SVGSwitch = () => {
         {screen === "sm" ? 
            <img className=' rounded-b-3xl' src={mobile} alt="Mobile" />
         :
-           <img className=' rounded-3xl' src={desktop} alt="Desktop" />
+           <img className=' rounded-3xl h-[600px]' src={desktop} alt="Desktop" />
         }
         </>
     )
