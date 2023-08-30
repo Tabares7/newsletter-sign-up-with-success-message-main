@@ -14,7 +14,8 @@ const SuccessView = () => {
   }
 
   return (
-    <div className="flex flex-col gap-8 p-10 min-h-screen justify-end">
+    <div className=" md:p-16 md:bg-paleblack md:h-screen md:flex md:justify-center md:items-center">
+    <div className="md:bg-white flex flex-col gap-8 p-10 md:rounded-2xl md:min-h-[400px] md:w-[400px] min-h-screen justify-end">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="60"
@@ -43,9 +44,10 @@ const SuccessView = () => {
         A confirmation email has been sent to <span className="font-bold">{decodeURIComponent(email)}</span>. Please open
         it and click the button inside to confirm your subscription.
       </p>
-      <button type='submit' onClick={handdleClick} className="rounded-lg bg-blue-950 p-4 text-gray-200 mt-64">
+      <button type='submit' onClick={handdleClick} className="rounded-lg bg-blue-950 p-4 text-gray-200 md:mt-0 mt-64">
         Dismiss message
       </button>
+    </div>
     </div>
   );
 };
